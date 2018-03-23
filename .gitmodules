@@ -1,12 +1,12 @@
 [submodule "bms_inputcontroller"]
 	path = bms_inputcontroller
-	url = https://gitlab.com/hgabor47/bms_inputcontroller.git
+	url = bms_inputcontroller.git
 [submodule "bms_windowslist"]
 	path = bms_windowslist
-	url = https://gitlab.com/hgabor47/bms_windowslist.git
+	url = bms_windowslist.git
 [submodule "bms_screencontentexporter"]
 	path = bms_screencontentexporter
-	url = https://gitlab.com/hgabor47/bms_screencontentexporter.git
+	url = bms_screencontentexporter.git
 [submodule "bms_imagebuffer"]
 	path = bms_imagebuffer
-	url = https://gitlab.com/hgabor47/bms_imagebuffer.git
+	url = bms_imagebuffer.git
