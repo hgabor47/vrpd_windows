@@ -3,10 +3,10 @@
 	url = ../../babylonms/bms_inputcontroller.git
 [submodule "bms_windowslist"]
 	path = bms_windowslist
-	url = /bms_windowslist.git
+	url = ../../babylonms/bms_windowslist.git
 [submodule "bms_screencontentexporter"]
 	path = bms_screencontentexporter
-	url = /bms_screencontentexporter.git
+	url = ../../babylonms/bms_screencontentexporter.git
 [submodule "bms_imagebuffer"]
 	path = bms_imagebuffer
-	url = /bms_imagebuffer.git
+	url = ../../babylonms/bms_imagebuffer.git
