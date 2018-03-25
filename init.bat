@@ -8,7 +8,3 @@ git clone https://gitlab.com/babylonms/bms_imagebuffer.git
 git clone https://gitlab.com/babylonms/bms_screencontentexporter.git
 git clone https://gitlab.com/babylonms/bms_windowslist.git
 
-mklink bms_inputcontroller/VRCEShared.cs VRCEShared.cs
-mklink bms_imagebuffer/VRCEShared.cs VRCEShared.cs
-mklink bms_screencontentexporter/VRCEShared.cs VRCEShared.cs
-mklink bms_windowslist/VRCEShared.cs VRCEShared.cs
