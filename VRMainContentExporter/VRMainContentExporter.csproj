@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\babylonms\main\c#\babylonms.cs">
+      <Link>babylonms.cs</Link>
+    </Compile>
     <Compile Include="argprocess.cs" />
-    <Compile Include="babylonms.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
