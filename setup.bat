@@ -9,7 +9,6 @@ set ib=imagebuffer.exe
 set ic=inputcontroller.exe
 set sce=screencontentexporter.exe
 set wl=windowslist.exe
-set vrce=VRCEShared.cs
 
 set pib=%~dp0"\bms_imagebuffer"
 set pic=%~dp0"\bms_inputcontroller"
@@ -29,14 +28,3 @@ mklink %p1%\%ib% %pib%%bd%\%ib%
 mklink %p1%\%ic% %pic%%bd%\%ic%
 mklink %p1%\%sce% %psce%%bd%\%sce%
 mklink %p1%\%wl% %pwl%%bd%\%wl%
-set p2=p0\%vrce%
-
-echo "VI. VRCEShared"
-del %pib%\%vrce%
-del %pic%\%vrce%
-del %psce%\%vrce%
-del %pwl%\%vrce%
-mklink %pib%\%vrce% %p2% 
-mklink %pic%\%vrce% %p2% 
-mklink %psce%\%vrce% %p2% 
-mklink %pwl%\%vrce% %p2% 

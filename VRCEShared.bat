@@ -13,29 +13,30 @@ set pwl=%~dp0"\bms_windowslist"
 echo "I."
 set vrce=VRCEShared.cs
 set p0=%~dp0"\VRMainContentExporter"
-set p2=p0\%vrce%
+set p2=%p0%\%vrce%
 
 echo "II. VRCEShared"
 del %pib%\%vrce%
 del %pic%\%vrce%
 del %psce%\%vrce%
 del %pwl%\%vrce%
-mklink %pib%\%vrce% %p2% 
-mklink %pic%\%vrce% %p2% 
-mklink %psce%\%vrce% %p2% 
-mklink %pwl%\%vrce% %p2% 
+mklink /H %pib%\%vrce% %p2% 
+mklink /H %pic%\%vrce% %p2% 
+mklink /H %psce%\%vrce% %p2% 
+mklink /H %pwl%\%vrce% %p2% 
 
-echo "III."
-set vrce=babylonms.cs
-set p0=%~dp0"..\..\babylonms\main\c#"
-set p2=p0\%vrce%
+rem because VS inlink used
+rem echo "III."
+rem set vrce=babylonms.cs
+rem set p0=%~dp0"..\..\babylonms\main\c#"
+rem set p2=p0\%vrce%
 
-echo "IV. Babylonms"
-del %pib%\%vrce%
-del %pic%\%vrce%
-del %psce%\%vrce%
-del %pwl%\%vrce%
-mklink %pib%\%vrce% %p2% 
-mklink %pic%\%vrce% %p2% 
-mklink %psce%\%vrce% %p2% 
-mklink %pwl%\%vrce% %p2% 
+rem echo "IV. Babylonms"
+rem del %pib%\%vrce%
+rem del %pic%\%vrce%
+rem del %psce%\%vrce%
+rem del %pwl%\%vrce%
+rem mklink %pib%\%vrce% %p2% 
+rem mklink %pic%\%vrce% %p2% 
+rem mklink %psce%\%vrce% %p2% 
+rem mklink %pwl%\%vrce% %p2% 
