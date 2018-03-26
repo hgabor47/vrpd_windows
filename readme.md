@@ -11,23 +11,21 @@
 5. Setup.bat for right copies' exe files.
 6. Setup or create a private network. (example with Android devices USB Net Sharing) and will get IP Address.
 	use this address.
+7. Start GO_FOR_TESTING.bat
+
++1 There is a GO.BAT with fixed settings in the vrpd_windows/bin/debug
 		
 
 
 Hierarchy:
 
-any dir ---BabylonMS   					https://gitlab.com/babylonms/babylonms.git
+	any dir ---BabylonMS   					https://gitlab.com/babylonms/babylonms.git	
+		|
+		---VRPrelimutensDesktop	                        https://gitlab.com/vrprelimutensdesktop/VRPrelimutensDesktop.git
+           		|
+			---vrpd_android  (if you would like)
+           		|
+			---vrpd_windows (need)
 
-	|
-
-	---VRPrelimutensDesktop	                        https://gitlab.com/vrprelimutensdesktop/VRPrelimutensDesktop.git
-
-           	|
-
-		---vrpd_android  (if you would like)
-
-           	|
-
-		---vrpd_windows (need)
 
 	
