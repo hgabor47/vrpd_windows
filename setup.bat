@@ -1,4 +1,9 @@
-echo off
+@echo off
+echo Setup runnable EXE files link for right works (mklink to working directories)
+echo The VRCEShared files will be refreshed (mklink) from VRMainContentExporter.
+echo Want to this process? (nothing problem if yes)
+echo Press any key or CTLR+C
+pause
 rem setup Symbolic links 
 set ib=imagebuffer.exe
 set ic=inputcontroller.exe
