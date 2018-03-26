@@ -9,15 +9,25 @@
 3. Open VRPrelimutensDesktop solution
 4. F7 Build all :)
 5. Setup.bat for right copies' exe files.
+6. Setup or create a private network. (example with Android devices USB Net Sharing) and will get IP Address.
+	use this address.
+		
 
 
 Hierarchy:
 
 any dir ---BabylonMS   					https://gitlab.com/babylonms/babylonms.git
+
 	|
+
 	---VRPrelimutensDesktop	                        https://gitlab.com/vrprelimutensdesktop/VRPrelimutensDesktop.git
+
            	|
+
 		---vrpd_android  (if you would like)
+
            	|
+
 		---vrpd_windows (need)
+
 	
