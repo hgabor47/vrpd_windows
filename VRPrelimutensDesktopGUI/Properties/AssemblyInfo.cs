@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("VRMainContentExporter")]
+[assembly: AssemblyTitle("VRPrelimutensDesktopGUI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HGPLSoft")]
-[assembly: AssemblyProduct("VRMainContentExporter")]
+[assembly: AssemblyProduct("VRPrelimutensDesktopGUI")]
 [assembly: AssemblyCopyright("Copyright © Gabor Horvath HGPLSoft")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d3130cf9-785f-4426-a849-5279bdd0b6db")]
+[assembly: Guid("11fe2494-8f12-486b-881a-e4525c295289")]
 
 // Version information for an assembly consists of the following four values:
 //
