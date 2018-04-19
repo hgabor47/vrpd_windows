@@ -1,6 +1,6 @@
 
 
-*Please consider to diretory hierarchy (seen later) and this list will be working!
+*Please consider to diretory hierarchy (seen below) and this list will be working!
 
 0. You need get a BABYLONMS Core for c# from here: https://gitlab.com/babylonms/babylonms.git
 
@@ -17,8 +17,8 @@
 		
 
 
-Hierarchy:
-
+Hierarchy
+=========
 	any dir ---BabylonMS                             https://gitlab.com/babylonms/babylonms.git	
 	        |
 	        ---VRPrelimutensDesktop                  https://gitlab.com/vrprelimutensdesktop/VRPrelimutensDesktop.git
@@ -28,4 +28,6 @@ Hierarchy:
 	           ---vrpd_windows (need)
 
 
-	
+Installer
+=========
+I use InnoSetup for create install package. 
