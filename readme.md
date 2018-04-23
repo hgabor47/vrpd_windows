@@ -2,7 +2,7 @@
 
 *Please consider to diretory hierarchy (seen below) and this list will be working!
 
-0. You need get a BABYLONMS Core for c# from here: https://gitlab.com/babylonms/babylonms.git
+0. You need get a BABYLONMS Core for c# from here: https://github.com/hgabor47/babylonms.git
 
 1. First you need to run VRCEShared batch for right and updated VRCESHared.cs hardlinks!
 2. Need to start(!) VS2017 (Not click .sln only)
@@ -19,9 +19,9 @@
 
 Hierarchy
 =========
-	any dir ---BabylonMS                             https://gitlab.com/babylonms/babylonms.git	
+	any dir ---BabylonMS                             https://github.com/hgabor47/babylonms.git
 	        |
-	        ---VRPrelimutensDesktop                  https://gitlab.com/vrprelimutensdesktop/VRPrelimutensDesktop.git
+	        ---VRPrelimutensDesktop                  https://github.com/hgabor47/VRPrelimutensDesktop.git
 	           |
 	           ---vrpd_android  (if you would like)
 	           |
