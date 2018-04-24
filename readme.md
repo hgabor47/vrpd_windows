@@ -11,10 +11,9 @@
 5. Setup.bat for right exe files' copy.
 6. Setup or create a private network. (example with Android devices USB Net Sharing) and will get IP Address.
 	use this address.
-7. Start GO_FOR_TESTING.bat
-
-+1 There is a GO.BAT with fixed settings in the vrpd_windows/bin/debug
-		
+7. Start 
+- With GO_FOR_TESTING.bat
+- With GUI (VRPrelimutensDesktopGUI) (recommended)		
 
 
 Hierarchy
