@@ -11,9 +11,9 @@
 5. Setup.bat for right exe files' copy.
 6. Setup or create a private network. (example with Android devices USB Net Sharing) and will get IP Address.
 	use this address.
-7. Start 
-- With GO_FOR_TESTING.bat
-- With GUI (VRPrelimutensDesktopGUI) (recommended)		
+7. Start:
+7.a - With GO_FOR_TESTING.bat
+7.b - With GUI (VRPrelimutensDesktopGUI) (recommended)		
 
 
 Hierarchy
@@ -30,3 +30,4 @@ Hierarchy
 Installer
 =========
 I use InnoSetup for create install package. 
+http://www.jrsoftware.org
