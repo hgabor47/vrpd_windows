@@ -8,17 +8,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-
+using FormSerialisation;
+using System.IO;
 
 namespace VRPrelimutensDesktopGUI
 {
     public partial class Form1 : Form
     {
+        static string ProgramFilesFolder;
+       
         public Form1()
         {
             InitializeComponent();
             Icon icon = Icon.ExtractAssociatedIcon("vrpd.ico");
             this.Icon = icon;
+            ProgramFilesFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "/vrpdGUI";
+            if (!Directory.Exists(ProgramFilesFolder))
+            {
+                try
+                {
+                    Directory.CreateDirectory(ProgramFilesFolder);
+                }
+                catch (Exception)
+                { }
+            }
+
         }
 
         string lastip = "";
@@ -143,6 +157,22 @@ namespace VRPrelimutensDesktopGUI
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             button2_Click(sender, null);
+            try
+            {
+                FormSerialisor.Serialise(this, ProgramFilesFolder + @"\vrpd.xml");                
+            }
+            catch (Exception)
+            {
+            }
+            finally
+            {
+               
+            };
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            FormSerialisor.Deserialise(this, ProgramFilesFolder + @"\vrpd.xml");
         }
     }
 }
