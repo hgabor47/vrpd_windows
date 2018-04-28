@@ -1,5 +1,5 @@
-![VRPDlogo](http://babylonms.com/babylonms/en/projects/vrpdesktop/media/vrpdicon.png "VR Prelimutens Desktop")
-
+[![VRPDlogo](http://babylonms.com/babylonms/en/projects/vrpdesktop/media/vrpdicon.png "VR Prelimutens Desktop")
+](http://babylonms.com/babylonms/en/projects/vrpdesktop/index.html "on WEB")
 HGPLSoft VRPrelimutensDesktop for Windows
 =========================================
 
@@ -8,9 +8,11 @@ HGPLSoft VRPrelimutensDesktop for Windows
 With VR Prelimutens Desktop begins a new era. You can place your windows in a limitless and free space. You can use any OS’es, even more than one at the same time. Arrange different computers’ windows in a single 3D place. 
 You can use same place simultaneously with others, see their avatars and what they are doing at the moment. 
 Primarily, this application provides help with your work. Develop together while you are working on different files - you only need turn your head to see what the others are doing. If this is not enough we still have plans, knowledge and fantasy 
+[WEBSite](http://babylonms.com/babylonms/en/projects/vrpdesktop/index.html "on WEB")
 
 ## If you would like to use only (try) download binaries and enjoy
 http://babylonms.com/babylonms/en/projects/vrpdesktop/index.html
+
 
 ## Prerequisites
 
