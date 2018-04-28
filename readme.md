@@ -47,7 +47,8 @@ Hierarchy
 	           ---vrpd_android  ()			 https://github.com/hgabor47/vrpd_android
 	           |
 	           ---vrpd_windows ()
-
+[VRPD](https://github.com/hgabor47/VRPrelimutensDesktop)
+[VRPDAndroid](https://github.com/hgabor47/vrpd_android)
 
 Installer
 =========
