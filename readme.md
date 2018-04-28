@@ -1,3 +1,5 @@
+![VRPDlogo](http://babylonms.com/babylonms/en/projects/vrpdesktop/media/vrpdicon.png "VR Prelimutens Desktop")
+
 HGPLSoft VRPrelimutensDesktop for Windows
 =========================================
 
