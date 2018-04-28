@@ -10,13 +10,13 @@ Primarily, this application provides help with your work. Develop together while
 ## If you would like to use only (try) download binaries and enjoy
 http://babylonms.com/babylonms/en/projects/vrpdesktop/index.html
 
-### Prerequisites
+## Prerequisites
 
-## for usage
+### for usage
 -Android table or phone with Android 6.0 or above.
 -VR Headset from low price. I use VRBOX2 and Samsung Gear VR (perfect)
 
-## for develop
+### for develop
 -Visual Studio 2017
 
 ## Deployment
