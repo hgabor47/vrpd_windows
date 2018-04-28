@@ -1,8 +1,25 @@
+HGPLSoft VRPrelimutensDesktop for Windows
+=========================================
+
+**Part of the VRPrelimutensDesktop GITHUB project.** https://github.com/hgabor47/VRPrelimutensDesktop
+
 With VR Prelimutens Desktop begins a new era. You can place your windows in a limitless and free space. You can use any OS’es, even more than one at the same time. Arrange different computers’ windows in a single 3D place. 
 You can use same place simultaneously with others, see their avatars and what they are doing at the moment. 
 Primarily, this application provides help with your work. Develop together while you are working on different files - you only need turn your head to see what the others are doing. If this is not enough we still have plans, knowledge and fantasy 
 
-Part of the VRPrelimutensDesktop GITHUB project. https://github.com/hgabor47/VRPrelimutensDesktop
+## If you would like to use only (try) download binaries and enjoy
+http://babylonms.com/babylonms/en/projects/vrpdesktop/index.html
+
+### Prerequisites
+
+## for usage
+-Android table or phone with Android 6.0 or above.
+-VR Headset from low price. I use VRBOX2 and Samsung Gear VR (perfect)
+
+## for develop
+-Visual Studio 2017
+
+## Deployment
 
 *Please consider to diretory hierarchy (seen below) and this list will be working!
 
@@ -16,22 +33,24 @@ Part of the VRPrelimutensDesktop GITHUB project. https://github.com/hgabor47/VRP
 6. Setup or create a private network. (example with Android devices USB Net Sharing) and will get IP Address.
 	use this address.
 7. Start:
-7.a - With GO_FOR_TESTING.bat
-7.b - With GUI (VRPrelimutensDesktopGUI) (recommended)		
+7.a - With GUI (VRPrelimutensDesktopGUI) (recommended)		
+7.b - With GO_FOR_TESTING.bat
+8. RUN VRPD_Android app on your Android device https://github.com/hgabor47/vrpd_android
 
 
-Hierarchy
+Hierarchy 
 =========
 	any dir ---BabylonMS                             https://github.com/hgabor47/babylonms.git
 	        |
 	        ---VRPrelimutensDesktop                  https://github.com/hgabor47/VRPrelimutensDesktop.git
 	           |
-	           ---vrpd_android  (if you would like)
+	           ---vrpd_android  ()			 https://github.com/hgabor47/vrpd_android
 	           |
-	           ---vrpd_windows (need)
+	           ---vrpd_windows ()
 
 
 Installer
 =========
 I use InnoSetup for create install package. 
 http://www.jrsoftware.org
+
