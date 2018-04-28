@@ -13,11 +13,11 @@ http://babylonms.com/babylonms/en/projects/vrpdesktop/index.html
 ## Prerequisites
 
 ### for usage
--Android table or phone with Android 6.0 or above.
--VR Headset from low price. I use VRBOX2 and Samsung Gear VR (perfect)
+* Android table or phone with Android 6.0 or above.
+* VR Headset from low price. I use VRBOX2 and Samsung Gear VR (perfect)
 
 ### for develop
--Visual Studio 2017
+* Visual Studio 2017
 
 ## Deployment
 
@@ -53,4 +53,10 @@ Installer
 =========
 I use InnoSetup for create install package. 
 http://www.jrsoftware.org
+
+
+## Authors
+
+* **Gabor Horvath** - *Initial work* - [BabylonMessageSwap](https://github.com/hgabor47/babylonms)
+                                       [VRPrelimutensDesktop](https://github.com/hgabor47/VRPrelimutensDesktop)
 
