@@ -156,6 +156,7 @@ namespace VRPrelimutensDesktopGUI
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            outp.Text = "";
             button2_Click(sender, null);
             try
             {

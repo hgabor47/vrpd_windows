@@ -1,4 +1,4 @@
-; -- Example1.iss --
+  ; -- Example1.iss --
 ; Demonstrates copying 3 files and creating an icon.
 
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING .ISS SCRIPT FILES!
@@ -23,6 +23,7 @@ Uninstallable=yes
 Source: "..\VRPrelimutensDesktopGUI\bin\Debug\*.exe"; DestDir: "{app}"
 Source: "..\VRPrelimutensDesktopGUI\bin\Debug\*.dll"; DestDir: "{app}"
 Source: ".\vrpd.ico"; DestDir: "{app}"
+Source: ".\nocursor.cur"; DestDir: "{app}"
 
 [Icons]
 Name: "{group}\VRPrelimutensDesktop"; Filename: "{app}\VRPrelimutensDesktopGUI.exe";  WorkingDir: {app}; Parameters: ""; IconFilename: "{app}\vrpd.ico"

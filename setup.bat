@@ -10,6 +10,7 @@ set sce=screencontentexporter.exe
 set wl=windowslist.exe
 set ce=vrmaincontentexporter.exe
 set dll=mousekeyboardactivitymonitor.dll
+set cur=nocursor.cur
 set ico=vrpd.ico
 
 set pib=%~dp0"\bms_imagebuffer"
@@ -28,11 +29,13 @@ if exist %p1%\%ic% del %p1%\%ic%
 if exist %p1%\%sce% del %p1%\%sce%
 if exist %p1%\%wl% del %p1%\%wl%
 if exist %p1%\%dll% del %p1%\%dll%
+if exist %p1%\%cur% del %p1%\%cur%
 mklink %p1%\%ib% %pib%%bd%\%ib% 
 mklink %p1%\%ic% %pic%%bd%\%ic% 
 mklink %p1%\%sce% %psce%%bd%\%sce% 
 mklink %p1%\%wl% %pwl%%bd%\%wl% 
-mklink %p1%\%dll% %pic%%bd%\%dll% 
+mklink %p1%\%dll% %pic%%bd%\%dll%
+mklink %p1%\%cur% %pic%%bd%\%cur% 
 
 
 echo "II."
@@ -45,12 +48,14 @@ if exist %p1%\%wl% del %p1%\%wl%
 if exist %p1%\%ce% del %p1%\%ce%
 if exist %p1%\%dll% del %p1%\%dll%
 if exist %p1%\%ico% del %p1%\%ico%
+if exist %p1%\%cur% del %p1%\%cur%
 mklink %p1%\%ib% %pib%%bd%\%ib%
 mklink %p1%\%ic% %pic%%bd%\%ic%
 mklink %p1%\%sce% %psce%%bd%\%sce%
 mklink %p1%\%wl% %pwl%%bd%\%wl%
 mklink %p1%\%ce% %pce%%bd%\%ce%
 mklink %p1%\%dll% %pic%%bd%\%dll%
+mklink %p1%\%cur% %pic%%bd%\%cur%
 mklink %p1%\%ico% %~dp0\%ico%
 
 echo Finished
