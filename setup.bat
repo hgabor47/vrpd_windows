@@ -18,11 +18,19 @@ set pic=%~dp0"\bms_inputcontroller"
 set psce=%~dp0"\bms_screencontentexporter"
 set pwl=%~dp0"\bms_windowslist"
 set pce=%~dp0"\VRMainContentExporter"
+set gui=%~dp0"\VRPrelimutensDesktopGUI"
 
 set bd=\bin\Debug
 
 echo "I."
-set p0=%~dp0"\VRMainContentExporter"
+set p0=%pic%
+set p1=%p0%%bd%
+if exist %p1%\%cur% del %p1%\%cur%
+mklink %p1%\%cur% %p0%\%cur% 
+
+
+echo "II."
+set p0=%pce%
 set p1=%p0%%bd%
 if exist %p1%\%ib% del %p1%\%ib%
 if exist %p1%\%ic% del %p1%\%ic%
@@ -35,11 +43,10 @@ mklink %p1%\%ic% %pic%%bd%\%ic%
 mklink %p1%\%sce% %psce%%bd%\%sce% 
 mklink %p1%\%wl% %pwl%%bd%\%wl% 
 mklink %p1%\%dll% %pic%%bd%\%dll%
-mklink %p1%\%cur% %pic%%bd%\%cur% 
+mklink %p1%\%cur% %pic%\%cur% 
 
-
-echo "II."
-set p0=%~dp0"\VRPrelimutensDesktopGUI"
+echo "III."
+set p0=%gui%
 set p1=%p0%%bd%
 if exist %p1%\%ib% del %p1%\%ib%
 if exist %p1%\%ic% del %p1%\%ic%
@@ -55,7 +62,7 @@ mklink %p1%\%sce% %psce%%bd%\%sce%
 mklink %p1%\%wl% %pwl%%bd%\%wl%
 mklink %p1%\%ce% %pce%%bd%\%ce%
 mklink %p1%\%dll% %pic%%bd%\%dll%
-mklink %p1%\%cur% %pic%%bd%\%cur%
+mklink %p1%\%cur% %pic%\%cur%
 mklink %p1%\%ico% %~dp0\%ico%
 
 echo Finished
