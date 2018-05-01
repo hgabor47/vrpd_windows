@@ -147,7 +147,12 @@ namespace VRMainContentExporter
             //todos
             while (true)
             {
-                Thread.Sleep(500);
+                Thread.Sleep(1500);
+                String isStop = Console.ReadLine();
+                if (isStop.ToLower().CompareTo("s") == 0)
+                {
+                    Handler(CtrlType.CTRL_CLOSE_EVENT);
+                }
                 //bms.outputpack.SetAttribs(BabylonMS.BabylonMS.CONST_Separate);
                 //bms.TransferPacket(false);
             };
