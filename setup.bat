@@ -16,7 +16,7 @@ set ico=vrpd.ico
 set pib=%~dp0"\bms_imagebuffer"
 set pic=%~dp0"\bms_inputcontroller"
 set psce=%~dp0"\bms_screencontentexporter"
-set pwl=%~dp0"\bms_windowslist"
+set pwl=%~dp0"\bms_windowslist"                     temp 
 set pce=%~dp0"\VRMainContentExporter"
 set gui=%~dp0"\VRPrelimutensDesktopGUI"
 
