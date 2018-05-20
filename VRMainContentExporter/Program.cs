@@ -40,6 +40,7 @@ namespace VRMainContentExporter
         public static long[] DEBUG_FIXWINDOWHANDLES = { }; //{ 0x001E048C, 0x002F094E }; //FAR...  0x001204B4 
         public static int DEBUG_FirstNScreenCaptureOnly = 8;
         public static int FPS = 5;
+        public static bool DEBUG_InputControllerOnly = false;
 
         public static string UUID = "e7bdb39f-c2c1-447b-b528-4b9a40757e90"; 
         
@@ -132,6 +133,7 @@ namespace VRMainContentExporter
             port_partner = arg.Get("-andro").IValue;
             instanceUUID = arg.Get("-id").SValue;
             DEBUG_FirstNScreenCaptureOnly = arg.Get("-lc").IValue;
+            DEBUG_InputControllerOnly = arg.Get("-ic").BValue;
 
             _handler += new EventHandler(Handler);
             SetConsoleCtrlHandler(_handler, true);
@@ -139,7 +141,8 @@ namespace VRMainContentExporter
             testAssembly();
 
             IDGenerator = new ObjectIDGenerator();
-            imagebuffer = new ImageBuffer();
+            if (!DEBUG_InputControllerOnly)
+                imagebuffer = new ImageBuffer();
             inputcontroller = new InputController();
             //new WindowsList(1f); //for test only
 
@@ -383,23 +386,30 @@ namespace VRMainContentExporter
         {
             Console.WriteLine("Android Connected");
             AndroidDescriptor thisAndroid = new AndroidDescriptor(session);
-            thisAndroid.bms_imagebuffer = BabylonMS.BabylonMS.LaunchMiniShip(Program.ip_imagebuffer, Program.port_imagebuffer, ImageBuffer.ImageBufferUUID, ImageBuffer.ImageBufferUUID, Program.instanceUUID); //UUID
-            thisAndroid.bms_imagebuffer.IsReady = false;
-            thisAndroid.bms_imagebuffer.NewInputFrame += InputFrame_fromImageBuffer;
-            thisAndroid.bms_imagebuffer.Disconnected += (ses) =>
+            if (!Program.DEBUG_InputControllerOnly)
             {
-                Console.WriteLine("Disconnect");
-            };
-            thisAndroid.bms_imagebuffer.Connected += (ses) =>
+                thisAndroid.bms_imagebuffer = BabylonMS.BabylonMS.LaunchMiniShip(Program.ip_imagebuffer, Program.port_imagebuffer, ImageBuffer.ImageBufferUUID, ImageBuffer.ImageBufferUUID, Program.instanceUUID); //UUID
+                thisAndroid.bms_imagebuffer.IsReady = false;
+                thisAndroid.bms_imagebuffer.NewInputFrame += InputFrame_fromImageBuffer;
+                thisAndroid.bms_imagebuffer.Disconnected += (ses) =>
+                {
+                    Console.WriteLine("Disconnect from imagebuffer");
+                };
+                thisAndroid.bms_imagebuffer.Connected += (ses) =>
+                {
+                    thisAndroid.bms_imagebuffer.Tag = ses;
+                    AndroidsList.Add(thisAndroid);
+                };
+                thisAndroid.bms_imagebuffer.PrepareGate();//Nonblocking   net Client             
+                while ((!thisAndroid.bms_imagebuffer.IsReady)) { Thread.Sleep(100); };
+                //although the device connected but need time so device can retrieve all windows
+                //Message_To_ImageBuffer_CONST_COMMAND_RETRIEVE(thisAndroid, (BabylonMS.BMSEventSessionParameter)thisAndroid.bms_imagebuffer.Tag);
+                Console.WriteLine("Android personal Imagebuffer Connected ");
+            } else
             {
-                thisAndroid.bms_imagebuffer.Tag = ses;
-                AndroidsList.Add(thisAndroid);                                
-            };
-            thisAndroid.bms_imagebuffer.PrepareGate();//Nonblocking   net Client             
-            while ((!thisAndroid.bms_imagebuffer.IsReady)) { Thread.Sleep(100); };
-            //although the device connected but need time so device can retrieve all windows
-            //Message_To_ImageBuffer_CONST_COMMAND_RETRIEVE(thisAndroid, (BabylonMS.BMSEventSessionParameter)thisAndroid.bms_imagebuffer.Tag);
-            Console.WriteLine("Android personal Imagebuffer Connected ");
+                AndroidsList.Add(thisAndroid);
+                Console.WriteLine("Inputcontroller only so Android personal Imagebuffer not connected");
+            }
         }
 
         void Message_To_ImageBuffer_CONST_COMMAND_RETRIEVE(AndroidDescriptor thisAndroid, BabylonMS.BMSEventSessionParameter imagebufferSession)
@@ -965,7 +975,7 @@ namespace VRMainContentExporter
 
         private void Connected(BabylonMS.BMSEventSessionParameter session)
         {
-            Console.WriteLine("Input Connected" );
+            Console.WriteLine("Input Controller Connected" );
             //throw new NotImplementedException();
         }
 

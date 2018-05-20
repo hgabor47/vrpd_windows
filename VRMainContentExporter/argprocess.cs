@@ -13,6 +13,7 @@ namespace VRMainContentExporter
             ,new argelement("-andro",   "192.168.42.100:9000",                  ARGType.IP,         "Android address")
             ,new argelement("-id",      "e7bdb39f-c2c1-447b-b528-4b9a40757e90", ARGType.STR,        "Instance UUID")
             ,new argelement("-lc",      "8",                                    ARGType.NUM,        "Limit Content ammount")
+            ,new argelement("-ic",      "false",                                ARGType.BOOL,        "Inputcontroller only")
         };
 
         public bool isSuccess;
@@ -113,7 +114,8 @@ namespace VRMainContentExporter
                 switch (argtype)
                 {
                     case ARGType.BOOL:
-                        BValue = true;
+                        if (par.CompareTo("false")!=0)                        
+                            BValue = true;
                         //not increment not used par                    
                         break;
                     case ARGType.IP:
