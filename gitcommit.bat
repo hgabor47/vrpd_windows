@@ -1,6 +1,11 @@
 @echo off
 echo Commit across all modules!
-SET /P message=Please enter your common commit message:
+if [%1]==[] (
+	SET /P message=Please enter your common commit message for windows vrpd:
+) else (
+	set message=%1
+)
+
 git add .
 git commit -m "%message%"
 git push -u origin master
