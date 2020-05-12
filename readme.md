@@ -28,12 +28,12 @@ http://babylonms.com/babylonms/en/projects/vrpdesktop/index.html
 *Please consider to diretory hierarchy (seen below) and this list will be working!
 
 0. You need get a BABYLONMS Core for c# from here: https://github.com/hgabor47/babylonms.git
-
+1. Start Init.bat
 1. First you need to run VRCEShared batch for right and updated VRCESHared.cs hardlinks!
 2. Need to start(!) VS2017 (Not click .sln only)
 3. Open VRPrelimutensDesktop solution.
 4. F7 Build all :)
-5. Setup.bat for right exe files' copy.
+5. Setup.bat for right exe files' copy. (maybe administrator privilege needed)
 6. Setup or create a private network. (example with Android devices USB Net Sharing) and will get IP Address.
 	use this address.
 7. Start:
