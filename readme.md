@@ -1,4 +1,4 @@
-[![VRPDlogo](http://babylonms.com/babylonms/en/projects/vrpdesktop/media/vrpdicon.png "VR Prelimutens Desktop")
+[![VRPDlogo](https://prelimutens.com/main/babylonms/babylonmssite/projects/vrpdesktop/media/vrpdicon.png "VR Prelimutens Desktop")
 ](http://babylonms.com/babylonms/en/projects/vrpdesktop/index.html "on WEB")
 HGPLSoft VRPrelimutensDesktop for Windows
 =========================================
